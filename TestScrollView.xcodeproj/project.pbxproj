@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05015F462A5FC378003BDDD5 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 05015F452A5FC378003BDDD5 /* OrderedCollections */; };
+		05015F482A5FF907003BDDD5 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05015F472A5FF907003BDDD5 /* SwiftUIView.swift */; };
+		054221E62A612A660098A668 /* ContentViewArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054221E52A612A660098A668 /* ContentViewArray.swift */; };
+		054221E82A616D0A0098A668 /* ContentViewOrderedDic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054221E72A616D0A0098A668 /* ContentViewOrderedDic.swift */; };
+		056993372A6001E50013A2FC /* SwiftUIView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056993362A6001E50013A2FC /* SwiftUIView2.swift */; };
 		05CB7D322A558A630050C04C /* TestScrollViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CB7D312A558A630050C04C /* TestScrollViewApp.swift */; };
 		05CB7D342A558A630050C04C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CB7D332A558A630050C04C /* ContentView.swift */; };
 		05CB7D362A558A650050C04C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05CB7D352A558A650050C04C /* Assets.xcassets */; };
@@ -14,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05015F472A5FF907003BDDD5 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		054221E52A612A660098A668 /* ContentViewArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewArray.swift; sourceTree = "<group>"; };
+		054221E72A616D0A0098A668 /* ContentViewOrderedDic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewOrderedDic.swift; sourceTree = "<group>"; };
+		056993362A6001E50013A2FC /* SwiftUIView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView2.swift; sourceTree = "<group>"; };
 		05CB7D2E2A558A630050C04C /* TestScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05CB7D312A558A630050C04C /* TestScrollViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScrollViewApp.swift; sourceTree = "<group>"; };
 		05CB7D332A558A630050C04C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05015F462A5FC378003BDDD5 /* OrderedCollections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,8 +63,12 @@
 			children = (
 				05CB7D312A558A630050C04C /* TestScrollViewApp.swift */,
 				05CB7D332A558A630050C04C /* ContentView.swift */,
+				054221E52A612A660098A668 /* ContentViewArray.swift */,
+				054221E72A616D0A0098A668 /* ContentViewOrderedDic.swift */,
+				05015F472A5FF907003BDDD5 /* SwiftUIView.swift */,
 				05CB7D352A558A650050C04C /* Assets.xcassets */,
 				05CB7D372A558A650050C04C /* Preview Content */,
+				056993362A6001E50013A2FC /* SwiftUIView2.swift */,
 			);
 			path = TestScrollView;
 			sourceTree = "<group>";
@@ -83,6 +97,9 @@
 			dependencies = (
 			);
 			name = TestScrollView;
+			packageProductDependencies = (
+				05015F452A5FC378003BDDD5 /* OrderedCollections */,
+			);
 			productName = TestScrollView;
 			productReference = 05CB7D2E2A558A630050C04C /* TestScrollView.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 05CB7D252A558A630050C04C;
+			packageReferences = (
+				05015F442A5FC378003BDDD5 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			productRefGroup = 05CB7D2F2A558A630050C04C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +158,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				05CB7D342A558A630050C04C /* ContentView.swift in Sources */,
+				054221E62A612A660098A668 /* ContentViewArray.swift in Sources */,
+				054221E82A616D0A0098A668 /* ContentViewOrderedDic.swift in Sources */,
+				056993372A6001E50013A2FC /* SwiftUIView2.swift in Sources */,
 				05CB7D322A558A630050C04C /* TestScrollViewApp.swift in Sources */,
+				05015F482A5FF907003BDDD5 /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +299,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +329,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +365,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		05015F442A5FC378003BDDD5 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		05015F452A5FC378003BDDD5 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05015F442A5FC378003BDDD5 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 05CB7D262A558A630050C04C /* Project object */;
 }

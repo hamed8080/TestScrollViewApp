@@ -11,7 +11,7 @@ import SwiftUI
 struct TestScrollViewApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentViewArray()
         }
     }
 }
